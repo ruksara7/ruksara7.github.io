@@ -10,38 +10,70 @@
       margin: 0;
       padding: 0;
       text-align: center;
+      color: #222;
     }
 
     header {
-      background-color: white;
-      padding: 30px;
+      background-color: #ffffff;
+      padding: 40px 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #666;
+    }
+
     section {
-      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
     .gallery img {
       width: 240px;
-      margin: 10px;
-      border-radius: 8px;
+      margin: 12px;
+      border-radius: 10px;
+      background: #fff;
+      padding: 6px;
+    }
+
+    .package {
+      background: #ffffff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
     .buy {
       display: inline-block;
-      background-color: black;
-      color: white;
-      padding: 12px 20px;
+      background-color: #222;
+      color: #fff;
+      padding: 14px 28px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      font-size: 16px;
       margin-top: 10px;
     }
 
     footer {
-      background-color: #eaeaea;
+      background-color: #ffffff;
+      border-top: 1px solid #ddd;
       padding: 20px;
       font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #222;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -58,28 +90,43 @@
   <p>
     This website showcases original AI-generated images created for
     therapists, educators, and wellness professionals.
-    Images are available under a limited usage license.
+    Images are provided under a limited professional usage license.
   </p>
 </section>
 
 <section>
-  <h2>Gallery</h2>
+  <h2>Image Samples</h2>
+  <p>Low-resolution previews. Full images are delivered after purchase.</p>
+
   <div class="gallery">
-    <img src="https://via.placeholder.com/240">
-    <img src="https://via.placeholder.com/240">
-    <img src="https://via.placeholder.com/240">
+    <img src="sample1.jpg">
+    <img src="sample2.jpg">
+    <img src="sample3.jpg">
   </div>
 </section>
 
 <section>
-  <h2>Buy Image License</h2>
-  <a class="buy" href="https://ruksar11.gumroad.com/l/honjwq" target="_blank">
-    Purchase via Gumroad
-  </a>
+  <h2>Image Packages</h2>
+
+  <div class="package">
+    <h3>Starter Pack</h3>
+    <p>5 AI-generated wellness images</p>
+    <a class="buy" href="https://ruksar11.gumroad.com/l/honjwq" target="_blank">
+      Buy for ₹199
+    </a>
+  </div>
+
+  <div class="package">
+    <h3>Therapy Visual Pack</h3>
+    <p>15 AI-generated therapy visuals</p>
+    <a class="buy" href="https://ruksar11.gumroad.com/l/honjwq" target="_blank">
+      Buy for ₹199
+    </a>
+  </div>
 </section>
 
 <footer>
-  © 2026 Mindful Moments with Visuals
+  © 2026 Mindful Moments with Visuals  
   <br>
   <a href="license.html">View Image License</a>
 </footer>
