@@ -72,6 +72,35 @@
       box-shadow: 0 15px 40px rgba(0,0,0,0.08);
     }
 
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      text-align: center;
+      position: relative;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 32px;
+      background: #1f1f1f;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 28px;
+      font-size: 1em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
     .previews {
       display: flex;
       flex-wrap: wrap;
@@ -117,6 +146,15 @@
     </p>
   </header>
 
+  <!-- TOP CTA -->
+  <section class="box" style="text-align:center;">
+    <p>
+      The visuals shown below are previews only.<br>
+      Full-resolution files are available through licensed purchase.
+    </p>
+    <a class="cta" href="#pricing">View Pricing & Order</a>
+  </section>
+
   <!-- ABOUT -->
   <section class="box">
     <h2>About the Work</h2>
@@ -126,38 +164,94 @@
     </p>
   </section>
 
-  <!-- SAMPLE PREVIEWS ONLY -->
+  <!-- SAMPLE PREVIEWS -->
   <section class="box">
     <h2>Sample Previews</h2>
-    <p>
-      Low-resolution previews for evaluation.
-      Full-resolution files are provided upon licensing.
-    </p>
+    <p>Low-resolution previews for evaluation.</p>
 
     <div class="previews">
-      <img src="sample.png" alt="Therapy visual preview">
-      <img src="sample1.png" alt="Mental health visual preview">
-      <img src="sample2.png" alt="Psychoeducation visual preview">
-      <img src="sample3.png" alt="Psychoeducation visual preview">
-      <img src="sample4.png" alt="Psychoeducation visual preview">
-      <img src="sample5.png" alt="Psychoeducation visual preview">
+      <img src="sample.png">
+      <img src="sample1.png">
+      <img src="sample2.png">
+      <img src="sample3.png">
+      <img src="sample4.png">
+      <img src="sample5.png">
     </div>
   </section>
 
+  <!-- PRICING -->
+  <section class="box" id="pricing">
+    <h2>Licensing & Orders</h2>
+
+    <div style="max-width:820px; margin:0 auto 40px; text-align:left;">
+      <ul>
+        <li>High-resolution, watermark-free images</li>
+        <li>Professional usage license</li>
+        <li>No attribution required</li>
+        <li>Neutral, non-symbolic imagery</li>
+      </ul>
+    </div>
+
+    <div class="products">
+
+      <div class="box product">
+        <h3>Starter License</h3>
+        <p style="font-size:1.8em;">₹199</p>
+        <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order – ₹199</a>
+      </div>
+
+      <div class="box product" style="border:2px solid #1a365d;">
+        <div style="
+          position:absolute;
+          top:-14px;
+          left:50%;
+          transform:translateX(-50%);
+          background:#1a365d;
+          color:#fff;
+          padding:6px 16px;
+          border-radius:20px;
+          font-size:0.85em;">
+          MOST CHOSEN
+        </div>
+        <h3>Professional Pack</h3>
+        <p style="font-size:2em; color:#1a365d;">₹299</p>
+        <p>10 full-resolution visuals</p>
+        <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order – ₹299</a>
+      </div>
+
+      <div class="box product">
+        <h3>Custom Session Set</h3>
+        <p style="font-size:1.8em;">₹1000</p>
+        <p>20 visuals for a specific session or theme</p>
+        <a class="cta" href="mailto:ruksaransari182025@gmail.com">Request Custom Set</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="box">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Are these therapy tools?</strong><br>No. These are communication aids only.</p>
+    <p><strong>Can I use them with clients?</strong><br>Yes, under the professional license.</p>
+    <p><strong>Can I request custom visuals?</strong><br>Yes, via email.</p>
+  </section>
+
+  <!-- LEGAL NOTICE -->
+  <section class="box">
+    <h2>Legal Notice</h2>
+    <p>
+      Visuals may be created using AI-assisted tools and are licensed by
+      Mindful Moments with Visuals. No ownership or exclusivity is transferred.
+    </p>
+  </section>
+
 </div>
-<p style="margin-top:30px; font-weight:500;">
-  Interested in licensing the full-resolution visuals?
-  <br>
-  <a href="license.html" style="text-decoration:underline;">
-    View licensing terms & request access
-  </a>
-</p>
 
 <footer>
   © 2026 Mindful Moments with Visuals<br>
-  <a href="medical-disclaimer.html">Medical Disclaimer</a> ·
-  <a href="license.html">License</a><br>
-  <a href="mailto:ruksaransari182025@gmail.com">Custom visual inquiries</a>
+  <a href="Mindful_Moments_License_and_Disclaimer.pdf">Download full License & Disclaimer (PDF)</a><br>
+  <a href="mailto:ruksaransari182025@gmail.com">Request licensing / custom visuals</a>
 </footer>
 
 </body>
