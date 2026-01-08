@@ -4,140 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Therapy Visual Aids for OCD & Anxiety | Mindful Moments with Visuals</title>
-<meta name="description" content="Professionally designed visual aids for mental health communication. AI-assisted imagery for psychoeducation, therapy sessions, and educational use. Commercial license available.">
+<title>Mindful Moments with Visuals</title>
+<meta name="description" content="Professional visual communication aids for psychoeducation and structured conversations.">
 
 <style>
-/* =================================
-   INSTITUTIONAL ULTRA-MINIMAL
-   Research / Clinical / Academic
-   ================================= */
+/* =========================
+   DAWN • NATURE • TRANSPARENT
+   FINAL — v1 LOCKED
+   ========================= */
 
 :root{
-  --bg:#ffffff;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --border:#e5e7eb;
-  --accent:#1f3a44;
+  --text-main:#34484f;
+  --text-muted:#5f7278;
+  --border-soft:rgba(180,200,205,.35);
+  --surface-glass:rgba(255,255,255,.76);
+  --accent:#6aa7b8;
 }
 
+/* Reset */
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 
 body{
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  background:var(--bg);
-  color:var(--text);
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   line-height:1.65;
-  -webkit-font-smoothing:antialiased;
+  color:var(--text-main);
+
+  /* DAWN + HOPE BACKGROUND */
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(255,245,210,.22), transparent 60%),
+    radial-gradient(900px 500px at 15% 20%, rgba(170,215,235,.24), transparent 55%),
+    radial-gradient(800px 400px at 85% 30%, rgba(160,205,185,.22), transparent 60%),
+    linear-gradient(180deg,#f9fcfd 0%,#f2f7fa 55%,#edf3f4 100%);
 }
 
+/* Layout */
 .container{
-  max-width:980px;
-  margin:0 auto;
-  padding:40px 20px 80px;
+  max-width:1040px;
+  margin:auto;
+  padding:36px 20px 80px;
 }
 
 /* Typography */
 h1,h2,h3{
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia,"Times New Roman",serif;
   font-weight:500;
-  color:var(--accent);
+  color:#243a40;
 }
 
-h1{
-  font-size:2.4rem;
-  margin-bottom:16px;
-}
+h1{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:14px}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:16px}
+h3{font-size:1.05rem;margin-bottom:8px}
 
-h2{
-  font-size:1.6rem;
-  margin-bottom:16px;
-}
+p{color:var(--text-muted);font-size:1.02rem;margin-bottom:14px}
 
-h3{
-  font-size:1.1rem;
-  margin-bottom:8px;
-}
-
-p{
-  font-size:1rem;
-  color:var(--muted);
-  margin-bottom:16px;
-  max-width:760px;
+/* Glass sections */
+.section{
+  background:var(--surface-glass);
+  border:1px solid var(--border-soft);
+  border-radius:22px;
+  padding:44px;
+  margin-bottom:64px;
+  box-shadow:0 18px 42px rgba(0,0,0,.05);
+  backdrop-filter:blur(6px);
 }
 
 /* Header */
 header{
-  padding-bottom:48px;
-  margin-bottom:56px;
-  border-bottom:1px solid var(--border);
+  text-align:center;
+  padding:80px 32px;
 }
 
 header p{
   max-width:720px;
+  margin:0 auto 22px;
 }
 
-/* Sections */
-section{
-  margin-bottom:64px;
-}
-
-.feature-box{
-  padding:0;
-}
-
-/* CTA — flat, non-promotional */
+/* CTA — human, not salesy */
 .cta{
   display:inline-block;
-  padding:10px 24px;
-  border:1px solid var(--accent);
-  color:var(--accent);
+  padding:14px 34px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#6aa7b8,#8ec3b0);
+  color:#fff;
   text-decoration:none;
-  font-size:0.95rem;
+  font-weight:500;
 }
 
-.cta:hover{
-  background:#f9fafb;
-}
-
-/* Two-column content */
-.content-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-}
-
-.content-grid ul{
-  list-style:none;
-}
-
-.content-grid li{
-  padding-left:20px;
-  position:relative;
-  margin-bottom:10px;
-}
-
-.content-grid li::before{
-  content:"–";
-  position:absolute;
-  left:0;
-  color:var(--muted);
-}
-
-/* Image grid — purely structural */
+/* Image grid — calm 3x2 */
 .previews{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:16px;
+  gap:22px;
   max-width:900px;
+  margin:28px auto 0;
 }
 
-.preview-item{
+.preview{
   aspect-ratio:4/3;
-  border:1px solid var(--border);
+  background:rgba(248,250,249,.78);
+  border:1px solid var(--border-soft);
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 12px 24px rgba(0,0,0,.05);
 }
 
-.preview-item img{
+.preview img{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -148,53 +120,48 @@ section{
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:32px;
+  gap:28px;
 }
 
-.product-card{
-  border:1px solid var(--border);
-  padding:24px;
+.product{
+  border:1px solid var(--border-soft);
+  border-radius:18px;
+  padding:28px;
+  text-align:center;
 }
 
-.product-price{
+.price{
   font-family:Georgia,serif;
-  font-size:1.5rem;
-  margin:12px 0;
+  font-size:1.8rem;
+  margin:14px 0;
 }
 
-/* FAQ */
-.faq-item{
-  margin-bottom:20px;
+/* Disclaimer — REQUIRED */
+.disclaimer{
+  font-size:.95rem;
+  color:#4f646b;
+  border-left:3px solid var(--accent);
+  padding-left:16px;
 }
 
 /* Footer */
 footer{
-  margin-top:72px;
-  padding-top:32px;
-  border-top:1px solid var(--border);
-  font-size:0.9rem;
-  color:var(--muted);
-}
-
-.footer-links{
-  margin-top:12px;
-}
-
-.footer-links a{
-  color:var(--accent);
-  margin-right:16px;
-  text-decoration:none;
+  margin-top:64px;
+  text-align:center;
+  color:#567078;
+  font-size:.9rem;
 }
 
 /* Responsive */
-@media (max-width:900px){
-  .content-grid{grid-template-columns:1fr}
+@media(max-width:900px){
   .previews{grid-template-columns:repeat(2,1fr)}
 }
-
-@media (max-width:480px){
+@media(max-width:480px){
   .previews{grid-template-columns:1fr}
-  h1{font-size:2rem}
+  .section{padding:32px 20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important}
 }
 </style>
 </head>
@@ -203,93 +170,59 @@ footer{
 
 <div class="container">
 
-<header>
+<header class="section">
   <h1>Mindful Moments with Visuals</h1>
-  <p>Professionally designed visual aids to support mental-health communication, psychoeducation, and structured therapeutic conversations.</p>
-  <a class="cta" href="#pricing">Explore Packages</a>
+  <p>Professionally designed visual aids to support mental-health communication, psychoeducation, and structured conversations.</p>
+  <a class="cta" href="#pricing">View Packages</a>
 </header>
 
-<section class="feature-box">
-  <h2>Preview Our Work</h2>
-  <p>High-resolution, professionally designed visuals for mental health professionals and educators. Full-resolution files available through licensed purchase.</p>
-  <a class="cta" href="#pricing">View Pricing & Order</a>
-</section>
-
-<section class="feature-box">
-  <h2>Why Use These Visuals?</h2>
-  <div class="content-grid">
-    <div>
-      <h3>Designed for Clarity</h3>
-      <p>Each visual is crafted to support psychoeducation without overwhelming or triggering.</p>
-      <ul>
-        <li>Clear, evidence-based designs</li>
-        <li>Neutral, non-symbolic imagery</li>
-        <li>Supports structured conversations</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Licensed for Professional Use</h3>
-      <p>Commercial license included with every purchase.</p>
-      <ul>
-        <li>Watermark-free files</li>
-        <li>Professional usage rights</li>
-        <li>No attribution required</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="feature-box">
+<section class="section">
   <h2>Visual Samples</h2>
   <p>Low-resolution previews for evaluation.</p>
   <div class="previews">
-    <div class="preview-item"><img src="sample.png"></div>
-    <div class="preview-item"><img src="sample1.png"></div>
-    <div class="preview-item"><img src="sample2.png"></div>
-    <div class="preview-item"><img src="sample3.png"></div>
-    <div class="preview-item"><img src="sample4.png"></div>
-    <div class="preview-item"><img src="sample5.png"></div>
+    <div class="preview"><img src="sample.png"></div>
+    <div class="preview"><img src="sample1.png"></div>
+    <div class="preview"><img src="sample2.png"></div>
+    <div class="preview"><img src="sample3.png"></div>
+    <div class="preview"><img src="sample4.png"></div>
+    <div class="preview"><img src="sample5.png"></div>
   </div>
 </section>
 
-<section class="feature-box" id="pricing">
+<section class="section" id="pricing">
   <h2>Licensing & Packages</h2>
   <div class="products">
-    <div class="product-card">
+    <div class="product">
       <h3>Starter License</h3>
-      <div class="product-price">₹199</div>
+      <div class="price">₹199</div>
       <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order</a>
     </div>
-    <div class="product-card">
+    <div class="product">
       <h3>Professional Pack</h3>
-      <div class="product-price">₹299</div>
+      <div class="price">₹299</div>
       <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order</a>
     </div>
-    <div class="product-card">
+    <div class="product">
       <h3>Custom Session Set</h3>
-      <div class="product-price">₹1000</div>
+      <div class="price">₹1000</div>
       <a class="cta" href="mailto:ruksaransari182025@gmail.com">Request</a>
     </div>
   </div>
 </section>
 
-<section class="feature-box">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-item"><strong>Are these therapy tools?</strong><p>No. These are communication aids only.</p></div>
-  <div class="faq-item"><strong>Can I use them with clients?</strong><p>Yes, under the professional license.</p></div>
-</section>
-
-<section class="feature-box">
-  <h2>Legal & Licensing</h2>
-  <p>Visuals may be created using AI-assisted tools and are licensed by Mindful Moments with Visuals. No ownership or exclusivity is transferred.</p>
+<section class="section">
+  <h2>Ethical Use & Disclaimer</h2>
+  <p class="disclaimer">
+    These visuals are designed as professional communication aids to support understanding,
+    psychoeducation, and structured discussion. They are not therapeutic interventions,
+    diagnostic tools, or treatment methods. Use remains non-directive and subject to
+    professional judgment.
+  </p>
 </section>
 
 <footer>
-  <p><strong>© 2026 Mindful Moments with Visuals</strong></p>
-  <div class="footer-links">
-    <a href="Mindful_Moments_License_and_Disclaimer.pdf" download>Download License</a>
-    <a href="mailto:ruksaransari182025@gmail.com">Request Custom Visuals</a>
-  </div>
+  © 2026 Mindful Moments with Visuals ·
+  <a href="Mindful_Moments_License_and_Disclaimer.pdf" download>License & Disclaimer</a>
 </footer>
 
 </div>
