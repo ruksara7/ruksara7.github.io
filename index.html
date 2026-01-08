@@ -8,101 +8,99 @@
 <meta name="description" content="Professionally designed visual aids for mental health communication. AI-assisted imagery for psychoeducation, therapy sessions, and educational use. Commercial license available.">
 
 <style>
-/* =========================
-   UI v1 — LOCKED (10/10)
-   Trust-first • Low arousal
-   ========================= */
+/* =================================
+   INSTITUTIONAL ULTRA-MINIMAL
+   Research / Clinical / Academic
+   ================================= */
 
 :root{
-  --bg-main:#f9fbfc;
-  --bg-soft:#f4f7f9;
-  --surface:#ffffff;
-  --primary:#1f3a44;
-  --secondary:#5f7682;
-  --border:#e2eaee;
-  --accent:#2f7f8f;
-  --success:#6fa371;
-  --shadow-sm:0 4px 12px rgba(0,0,0,.04);
-  --shadow-md:0 14px 36px rgba(0,0,0,.06);
+  --bg:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --accent:#1f3a44;
 }
 
-/* Reset */
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+
 body{
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  background:linear-gradient(180deg,var(--bg-main),var(--bg-soft));
-  color:var(--secondary);
+  background:var(--bg);
+  color:var(--text);
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
 
-/* Layout */
 .container{
-  max-width:1040px;
-  margin:auto;
-  padding:32px 20px 80px;
+  max-width:980px;
+  margin:0 auto;
+  padding:40px 20px 80px;
 }
 
 /* Typography */
 h1,h2,h3{
   font-family: Georgia, "Times New Roman", serif;
-  color:var(--primary);
   font-weight:500;
-  letter-spacing:.2px;
+  color:var(--accent);
 }
 
-h1{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:16px}
-h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:18px}
-h3{font-size:1.1rem;margin-bottom:8px}
+h1{
+  font-size:2.4rem;
+  margin-bottom:16px;
+}
 
-p{font-size:1.02rem;margin-bottom:16px}
+h2{
+  font-size:1.6rem;
+  margin-bottom:16px;
+}
 
-/* Hero */
+h3{
+  font-size:1.1rem;
+  margin-bottom:8px;
+}
+
+p{
+  font-size:1rem;
+  color:var(--muted);
+  margin-bottom:16px;
+  max-width:760px;
+}
+
+/* Header */
 header{
-  text-align:center;
-  padding:90px 30px;
-  background:var(--surface);
-  border-radius:22px;
-  box-shadow:var(--shadow-md);
-  margin-bottom:70px;
+  padding-bottom:48px;
+  margin-bottom:56px;
+  border-bottom:1px solid var(--border);
 }
 
 header p{
   max-width:720px;
-  margin:0 auto 24px;
-}
-
-/* CTA */
-.cta{
-  display:inline-block;
-  padding:14px 36px;
-  border-radius:999px;
-  background:var(--primary);
-  color:#fff;
-  text-decoration:none;
-  font-weight:500;
-  transition:transform .2s ease,box-shadow .2s ease;
-}
-
-@media (hover:hover){
-  .cta:hover{
-    transform:translateY(-2px);
-    box-shadow:var(--shadow-sm);
-  }
 }
 
 /* Sections */
-.feature-box{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:22px;
-  padding:48px;
-  margin-bottom:60px;
-  box-shadow:var(--shadow-sm);
+section{
+  margin-bottom:64px;
 }
 
-/* Two-column */
+.feature-box{
+  padding:0;
+}
+
+/* CTA — flat, non-promotional */
+.cta{
+  display:inline-block;
+  padding:10px 24px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+  font-size:0.95rem;
+}
+
+.cta:hover{
+  background:#f9fafb;
+}
+
+/* Two-column content */
 .content-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -114,36 +112,29 @@ header p{
 }
 
 .content-grid li{
-  padding-left:28px;
+  padding-left:20px;
   position:relative;
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 
 .content-grid li::before{
-  content:"✓";
+  content:"–";
   position:absolute;
   left:0;
-  color:var(--success);
-  font-weight:600;
+  color:var(--muted);
 }
 
-/* IMAGE GRID — CALM 3x2 */
+/* Image grid — purely structural */
 .previews{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:22px;
+  gap:16px;
   max-width:900px;
-  margin:32px auto 0;
 }
 
 .preview-item{
   aspect-ratio:4/3;
-  background:#f6f9fb;
   border:1px solid var(--border);
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 6px 18px rgba(0,0,0,.05);
-  transition:transform .25s ease,box-shadow .25s ease;
 }
 
 .preview-item img{
@@ -153,71 +144,46 @@ header p{
   display:block;
 }
 
-@media (hover:hover){
-  .preview-item:hover{
-    transform:translateY(-3px);
-    box-shadow:0 12px 28px rgba(0,0,0,.08);
-  }
-}
-
 /* Products */
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:28px;
+  gap:32px;
 }
 
 .product-card{
-  background:var(--surface);
   border:1px solid var(--border);
-  border-radius:18px;
-  padding:32px;
-  text-align:center;
-  box-shadow:var(--shadow-sm);
-}
-
-.product-card.featured{
-  border-color:var(--accent);
+  padding:24px;
 }
 
 .product-price{
   font-family:Georgia,serif;
-  font-size:1.9rem;
-  color:var(--primary);
-  margin:16px 0;
+  font-size:1.5rem;
+  margin:12px 0;
 }
 
 /* FAQ */
 .faq-item{
-  border-bottom:1px solid var(--border);
-  padding-bottom:18px;
-  margin-bottom:18px;
+  margin-bottom:20px;
 }
-
-.faq-item:last-child{border:none}
 
 /* Footer */
 footer{
-  margin-top:60px;
-  background:var(--primary);
-  color:#e9f3f5;
-  text-align:center;
-  padding:48px 20px;
-  border-radius:20px;
+  margin-top:72px;
+  padding-top:32px;
+  border-top:1px solid var(--border);
+  font-size:0.9rem;
+  color:var(--muted);
 }
 
 .footer-links{
-  display:flex;
-  gap:16px;
-  justify-content:center;
-  flex-wrap:wrap;
   margin-top:12px;
 }
 
 .footer-links a{
-  color:#e9f3f5;
+  color:var(--accent);
+  margin-right:16px;
   text-decoration:none;
-  font-weight:500;
 }
 
 /* Responsive */
@@ -228,13 +194,7 @@ footer{
 
 @media (max-width:480px){
   .previews{grid-template-columns:1fr}
-  header{padding:60px 20px}
-  .feature-box{padding:32px 20px}
-}
-
-/* Motion safety */
-@media (prefers-reduced-motion:reduce){
-  *{transition:none!important}
+  h1{font-size:2rem}
 }
 </style>
 </head>
@@ -252,9 +212,7 @@ footer{
 <section class="feature-box">
   <h2>Preview Our Work</h2>
   <p>High-resolution, professionally designed visuals for mental health professionals and educators. Full-resolution files available through licensed purchase.</p>
-  <div style="text-align:center">
-    <a class="cta" href="#pricing">View Pricing & Order</a>
-  </div>
+  <a class="cta" href="#pricing">View Pricing & Order</a>
 </section>
 
 <section class="feature-box">
@@ -300,17 +258,17 @@ footer{
     <div class="product-card">
       <h3>Starter License</h3>
       <div class="product-price">₹199</div>
-      <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order Now</a>
+      <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order</a>
     </div>
-    <div class="product-card featured">
+    <div class="product-card">
       <h3>Professional Pack</h3>
       <div class="product-price">₹299</div>
-      <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order Now</a>
+      <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order</a>
     </div>
     <div class="product-card">
       <h3>Custom Session Set</h3>
       <div class="product-price">₹1000</div>
-      <a class="cta" href="mailto:ruksaransari182025@gmail.com">Request Custom Set</a>
+      <a class="cta" href="mailto:ruksaransari182025@gmail.com">Request</a>
     </div>
   </div>
 </section>
@@ -326,8 +284,6 @@ footer{
   <p>Visuals may be created using AI-assisted tools and are licensed by Mindful Moments with Visuals. No ownership or exclusivity is transferred.</p>
 </section>
 
-</div>
-
 <footer>
   <p><strong>© 2026 Mindful Moments with Visuals</strong></p>
   <div class="footer-links">
@@ -335,6 +291,8 @@ footer{
     <a href="mailto:ruksaransari182025@gmail.com">Request Custom Visuals</a>
   </div>
 </footer>
+
+</div>
 
 </body>
 </html>
