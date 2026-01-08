@@ -1,298 +1,266 @@
+interface is gobar 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Therapy Visual Aids for OCD & Anxiety | Mindful Moments with Visuals</title>
-<meta name="description" content="Professionally designed visual aids for mental health communication. AI-assisted imagery for psychoeducation, therapy sessions, and educational use. Commercial license available.">
+  <title>Therapy Visual Aids for OCD & Anxiety | Mindful Moments with Visuals</title>
 
-<style>
-/* =================================
-   INSTITUTIONAL ULTRA-MINIMAL
-   Research / Clinical / Academic
-   ================================= */
+  <meta name="description" content="Professionally designed visual aids for mental health communication. AI-assisted imagery for psychoeducation, therapy sessions, and educational use. Commercial license available.">
 
-:root{
-  --bg:#ffffff;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --border:#e5e7eb;
-  --accent:#1f3a44;
-}
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-*{margin:0;padding:0;box-sizing:border-box}
+    body {
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #f8f9ff, #e8eaf6);
+      color: #2c3e50;
+      line-height: 1.7;
+    }
 
-body{
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
-.container{
-  max-width:980px;
-  margin:0 auto;
-  padding:40px 20px 80px;
-}
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      margin: 30px 0;
+    }
 
-/* Typography */
-h1,h2,h3{
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight:500;
-  color:var(--accent);
-}
+    h1 {
+      font-size: 2.6em;
+      color: #1a365d;
+      margin-bottom: 15px;
+      font-weight: normal;
+    }
 
-h1{
-  font-size:2.4rem;
-  margin-bottom:16px;
-}
+    header p {
+      font-size: 1.2em;
+      color: #546e7a;
+      max-width: 760px;
+      margin: auto;
+    }
 
-h2{
-  font-size:1.6rem;
-  margin-bottom:16px;
-}
+    section {
+      margin: 70px 0;
+    }
 
-h3{
-  font-size:1.1rem;
-  margin-bottom:8px;
-}
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-p{
-  font-size:1rem;
-  color:var(--muted);
-  margin-bottom:16px;
-  max-width:760px;
-}
+    p {
+      max-width: 820px;
+      margin: auto;
+      font-size: 1.05em;
+      color: #455a64;
+      text-align: center;
+    }
 
-/* Header */
-header{
-  padding-bottom:48px;
-  margin-bottom:56px;
-  border-bottom:1px solid var(--border);
-}
+    .box {
+      background: #ffffff;
+      padding: 45px;
+      border-radius: 22px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
 
-header p{
-  max-width:720px;
-}
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
 
-/* Sections */
-section{
-  margin-bottom:64px;
-}
+    .product {
+      text-align: center;
+      position: relative;
+    }
 
-.feature-box{
-  padding:0;
-}
+    .cta {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 32px;
+      background: #1f1f1f;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 28px;
+      font-size: 1em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-/* CTA — flat, non-promotional */
-.cta{
-  display:inline-block;
-  padding:10px 24px;
-  border:1px solid var(--accent);
-  color:var(--accent);
-  text-decoration:none;
-  font-size:0.95rem;
-}
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
 
-.cta:hover{
-  background:#f9fafb;
-}
+    .previews {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 25px;
+    }
 
-/* Two-column content */
-.content-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-}
+    .previews img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
-.content-grid ul{
-  list-style:none;
-}
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 0.9em;
+      color: #607d8b;
+    }
 
-.content-grid li{
-  padding-left:20px;
-  position:relative;
-  margin-bottom:10px;
-}
+    footer a {
+      color: #1a365d;
+      text-decoration: none;
+    }
 
-.content-grid li::before{
-  content:"–";
-  position:absolute;
-  left:0;
-  color:var(--muted);
-}
-
-/* Image grid — purely structural */
-.previews{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  max-width:900px;
-}
-
-.preview-item{
-  aspect-ratio:4/3;
-  border:1px solid var(--border);
-}
-
-.preview-item img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-/* Products */
-.products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:32px;
-}
-
-.product-card{
-  border:1px solid var(--border);
-  padding:24px;
-}
-
-.product-price{
-  font-family:Georgia,serif;
-  font-size:1.5rem;
-  margin:12px 0;
-}
-
-/* FAQ */
-.faq-item{
-  margin-bottom:20px;
-}
-
-/* Footer */
-footer{
-  margin-top:72px;
-  padding-top:32px;
-  border-top:1px solid var(--border);
-  font-size:0.9rem;
-  color:var(--muted);
-}
-
-.footer-links{
-  margin-top:12px;
-}
-
-.footer-links a{
-  color:var(--accent);
-  margin-right:16px;
-  text-decoration:none;
-}
-
-/* Responsive */
-@media (max-width:900px){
-  .content-grid{grid-template-columns:1fr}
-  .previews{grid-template-columns:repeat(2,1fr)}
-}
-
-@media (max-width:480px){
-  .previews{grid-template-columns:1fr}
-  h1{font-size:2rem}
-}
-</style>
+    @media (max-width: 768px) {
+      h1 { font-size: 2em; }
+    }
+  </style>
 </head>
 
 <body>
-
 <div class="container">
 
-<header>
-  <h1>Mindful Moments with Visuals</h1>
-  <p>Professionally designed visual aids to support mental-health communication, psychoeducation, and structured therapeutic conversations.</p>
-  <a class="cta" href="#pricing">Explore Packages</a>
-</header>
+  <!-- HERO -->
+  <header>
+    <h1>Mindful Moments with Visuals</h1>
+    <p>
+      Professionally designed visual aids to support mental-health communication,
+      psychoeducation, and structured therapeutic conversations.
+    </p>
+  </header>
 
-<section class="feature-box">
-  <h2>Preview Our Work</h2>
-  <p>High-resolution, professionally designed visuals for mental health professionals and educators. Full-resolution files available through licensed purchase.</p>
-  <a class="cta" href="#pricing">View Pricing & Order</a>
-</section>
+  <!-- TOP CTA -->
+  <section class="box" style="text-align:center;">
+    <p>
+      The visuals shown below are previews only.<br>
+      Full-resolution files are available through licensed purchase.
+    </p>
+    <a class="cta" href="#pricing">View Pricing & Order</a>
+  </section>
 
-<section class="feature-box">
-  <h2>Why Use These Visuals?</h2>
-  <div class="content-grid">
-    <div>
-      <h3>Designed for Clarity</h3>
-      <p>Each visual is crafted to support psychoeducation without overwhelming or triggering.</p>
-      <ul>
-        <li>Clear, evidence-based designs</li>
-        <li>Neutral, non-symbolic imagery</li>
-        <li>Supports structured conversations</li>
-      </ul>
+  <!-- ABOUT -->
+  <section class="box">
+    <h2>About the Work</h2>
+    <p>
+      A curated collection of AI-assisted visuals designed for
+      psychoeducation, reflection, and professional communication.
+    </p>
+  </section>
+
+  <!-- SAMPLE PREVIEWS -->
+  <section class="box">
+    <h2>Sample Previews</h2>
+    <p>Low-resolution previews for evaluation.</p>
+
+    <div class="previews">
+      <img src="sample.png">
+      <img src="sample1.png">
+      <img src="sample2.png">
+      <img src="sample3.png">
+      <img src="sample4.png">
+      <img src="sample5.png">
     </div>
-    <div>
-      <h3>Licensed for Professional Use</h3>
-      <p>Commercial license included with every purchase.</p>
+  </section>
+
+  <!-- PRICING -->
+  <section class="box" id="pricing">
+    <h2>Licensing & Orders</h2>
+
+    <div style="max-width:820px; margin:0 auto 40px; text-align:left;">
       <ul>
-        <li>Watermark-free files</li>
-        <li>Professional usage rights</li>
+        <li>High-resolution, watermark-free images</li>
+        <li>Professional usage license</li>
         <li>No attribution required</li>
+        <li>Neutral, non-symbolic imagery</li>
       </ul>
     </div>
-  </div>
-</section>
 
-<section class="feature-box">
-  <h2>Visual Samples</h2>
-  <p>Low-resolution previews for evaluation.</p>
-  <div class="previews">
-    <div class="preview-item"><img src="sample.png"></div>
-    <div class="preview-item"><img src="sample1.png"></div>
-    <div class="preview-item"><img src="sample2.png"></div>
-    <div class="preview-item"><img src="sample3.png"></div>
-    <div class="preview-item"><img src="sample4.png"></div>
-    <div class="preview-item"><img src="sample5.png"></div>
-  </div>
-</section>
+    <div class="products">
 
-<section class="feature-box" id="pricing">
-  <h2>Licensing & Packages</h2>
-  <div class="products">
-    <div class="product-card">
-      <h3>Starter License</h3>
-      <div class="product-price">₹199</div>
-      <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order</a>
+      <div class="box product">
+        <h3>Starter License</h3>
+        <p style="font-size:1.8em;">₹199</p>
+        <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order – ₹199</a>
+      </div>
+
+      <div class="box product" style="border:2px solid #1a365d;">
+        <div style="
+          position:absolute;
+          top:-14px;
+          left:50%;
+          transform:translateX(-50%);
+          background:#1a365d;
+          color:#fff;
+          padding:6px 16px;
+          border-radius:20px;
+          font-size:0.85em;">
+          MOST CHOSEN
+        </div>
+        <h3>Professional Pack</h3>
+        <p style="font-size:2em; color:#1a365d;">₹299</p>
+        <p>10 full-resolution visuals</p>
+        <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order – ₹299</a>
+      </div>
+
+      <div class="box product">
+        <h3>Custom Session Set</h3>
+        <p style="font-size:1.8em;">₹1000</p>
+        <p>20 visuals for a specific session or theme</p>
+        <a class="cta" href="mailto:ruksaransari182025@gmail.com">Request Custom Set</a>
+      </div>
+
     </div>
-    <div class="product-card">
-      <h3>Professional Pack</h3>
-      <div class="product-price">₹299</div>
-      <a class="cta" href="https://ruksar11.gumroad.com/l/honjwq">Order</a>
-    </div>
-    <div class="product-card">
-      <h3>Custom Session Set</h3>
-      <div class="product-price">₹1000</div>
-      <a class="cta" href="mailto:ruksaransari182025@gmail.com">Request</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="feature-box">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-item"><strong>Are these therapy tools?</strong><p>No. These are communication aids only.</p></div>
-  <div class="faq-item"><strong>Can I use them with clients?</strong><p>Yes, under the professional license.</p></div>
-</section>
+  <!-- FAQ -->
+  <section class="box">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Are these therapy tools?</strong><br>No. These are communication aids only.</p>
+    <p><strong>Can I use them with clients?</strong><br>Yes, under the professional license.</p>
+    <p><strong>Can I request custom visuals?</strong><br>Yes, via email.</p>
+  </section>
 
-<section class="feature-box">
-  <h2>Legal & Licensing</h2>
-  <p>Visuals may be created using AI-assisted tools and are licensed by Mindful Moments with Visuals. No ownership or exclusivity is transferred.</p>
-</section>
-
-<footer>
-  <p><strong>© 2026 Mindful Moments with Visuals</strong></p>
-  <div class="footer-links">
-    <a href="Mindful_Moments_License_and_Disclaimer.pdf" download>Download License</a>
-    <a href="mailto:ruksaransari182025@gmail.com">Request Custom Visuals</a>
-  </div>
-</footer>
+  <!-- LEGAL NOTICE -->
+  <section class="box">
+    <h2>Legal Notice</h2>
+    <p>
+      Visuals may be created using AI-assisted tools and are licensed by
+      Mindful Moments with Visuals. No ownership or exclusivity is transferred.
+    </p>
+  </section>
 
 </div>
+
+<footer>
+  © 2026 Mindful Moments with Visuals<br>
+
+  <a href="Mindful_Moments_License_and_Disclaimer.pdf" download>
+    Download full License & Disclaimer (PDF)
+  </a><br><br>
+
+  <a href="mailto:ruksaransari182025@gmail.com">
+    Request custom visuals
+  </a>
+</footer>
+
 
 </body>
 </html>
